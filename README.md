@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛡️ MikroTik CHR — Auto Installer
+# 🛡️ MikroTik CHR - Auto Installer
 
 **Автоматическая установка MikroTik CHR на VDS/VPS одной командой**
 
