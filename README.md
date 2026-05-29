@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🛡️ MikroTik CHR — Auto Installer
 
 **Автоматическая установка MikroTik CHR на VDS/VPS одной командой**
@@ -9,6 +11,8 @@
 [![RouterOS](https://img.shields.io/badge/RouterOS-7.x-brightgreen?style=for-the-badge)](https://mikrotik.com/software)
 
 *Один скрипт — полноценный роутер MikroTik. Сервер превращается в RouterOS CHR с настроенной сетью, firewall, NTP и безопасными портами.*
+
+</div>
 
 ---
 
@@ -129,9 +133,9 @@ drop    — всё остальное входящее
 ### Установка за 1 команду
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/avar-soft/mikrotik-chr-installer/main/install_chr.sh -o install_chr_v8.sh \
-  && chmod +x install_chr_v8.sh \
-  && sudo bash install_chr_v8.sh
+curl -fsSL https://raw.githubusercontent.com/avar-soft/mikrotik-chr-installer/main/install_chr.sh -o install_chr.sh \
+  && chmod +x install_chr.sh \
+  && sudo bash install_chr.sh
 ```
 
 При запуске скрипт проведёт через 10 шагов:
@@ -291,7 +295,7 @@ echo b > /proc/sysrq-trigger
 
 ```
 mikrotik-chr-installer/
-└── install_chr_v8.sh     # Основной скрипт установки
+└── install_chr.sh      # Основной скрипт установки
 ```
 
 ---
@@ -301,11 +305,6 @@ mikrotik-chr-installer/
 | Дистрибутив | Пакетный менеджер |
 |---|---|
 | Ubuntu 20.04+, Debian 10+, Proxmox | `apt` |
-| RHEL 8+, Fedora, AlmaLinux, Rocky Linux | `dnf` |
-| CentOS 7, старый RHEL | `yum` |
-| openSUSE, SLES | `zypper` |
-| Arch Linux, Manjaro | `pacman` |
-| Alpine Linux | `apk` |
 
 ---
 
@@ -372,7 +371,11 @@ MIT © your-name
 
 ---
 
+<div align="center">
+  
 **Сделано для тех, кто хочет MikroTik на VPS без боли**
 
 ⭐ Если проект полезен — поставь звезду!
+
+</div>
 
